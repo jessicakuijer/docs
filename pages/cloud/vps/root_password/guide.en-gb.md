@@ -1,11 +1,11 @@
 ---
 title: Changing your root password on a VPS
 slug: root-password
-excerpt: Learn how to change the root password of a VPS
+excerpt: Find out how to change the root password of a VPS
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 15th June 2019**
+**Last updated 15th October 2020**
 
 ## Objective
 
@@ -13,11 +13,17 @@ It may happen that you need to change the root password on your Linux operating 
 - You know your root password, but you want to change it
 - You have lost your root password and unable to login via SSH anymore
 
+## Requirements
+
+- an OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/) already set up
+- administrative access (root) via SSH to your VPS (for regular password change)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (for rescue mode)
+
 ## Instructions
 
-### Change the password with root user account access
+### Changing the password with root user account access
 
-If you still have your current password, the process is simpler. Log in to your server, then type the following command:
+If you still have your current password, the process is simple. Log in to your server, then type the following command:
 
 ```sh
 passwd
@@ -38,16 +44,11 @@ passwd: password updated successfully
 
 ### Changing a password after you have lost it
 
-#### Requirements
-
-- You must be connected via SSH to your VPS (root access).
-- [Reboot your VPS in rescue mode](https://docs.ovh.com/gb/en/vps/rescue/).
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### Step 1: Ensure VPS is in rescue mode
+#### Step 1: Restart the VPS into rescue mode
 
-If you have not rebooted the VPS into rescue mode yet, you may use the [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/){.external} guide to help you to reboot it into rescue mode.
+If you need further instructions about using rescue mode with a VPS, you may consult the [rescue mode guide](../rescue/)  to help you to reboot it into rescue mode.
 
 #### Step 2: Identify the mount point
 
@@ -121,7 +122,8 @@ After you have changed your password and rebooted the VPS from the control panel
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/gb/en/dedicated/ssh-introduction/)
-[Activating rescue mode on VPS](https://docs.ovh.com/gb/en/vps/rescue/)
+[Introduction to SSH](../../dedicated/ssh-introduction/)
+
+[Activating rescue mode on VPS](../rescue/)
 
 Join our user community on <https://community.ovh.com/en/>.
