@@ -3,7 +3,7 @@ title: Information about Dedicated Cloud billing
 excerpt: Details about the Dedicated Cloud billing
 slug: information_about_dedicated_cloud_billing
 legacy_guide_number: g677
-section: Getting started
+section: FAQ
 ---
 
 
