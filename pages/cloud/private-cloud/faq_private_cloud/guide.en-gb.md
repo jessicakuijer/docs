@@ -1,9 +1,9 @@
 ---
-title: Dedicated Cloud FAQ
+title: Hosted Private Cloud FAQ
 excerpt: ''
 slug: dedicated_cloud_faq
 legacy_guide_number: g598
-section: Getting started
+section: FAQ
 ---
 
 
